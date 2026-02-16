@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Formulario de contacto</h1>
+
+      <form id="contactForm" class="card">
+        <label>
+          Nombre
+          <input type="text" name="nombre" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" required minlength="5"></textarea>
+        </label>
+
+        <button type="submit" id="submitBtn">Enviar</button>
+
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
