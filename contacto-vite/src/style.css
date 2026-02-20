@@ -62,3 +62,40 @@ button:disabled {
   min-height: 1.2em;
   color: #374151;
 }
+.chatBox {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 220px;
+  max-height: 360px;
+  overflow: auto;
+  background: #fafafa;
+  display: grid;
+  gap: 8px;
+}
+
+.msg {
+  padding: 10px 12px;
+  border-radius: 12px;
+  max-width: 85%;
+  line-height: 1.25;
+  white-space: pre-wrap;
+}
+
+.msg.user {
+  justify-self: end;
+  background: #111;
+  color: #fff;
+}
+
+.msg.bot {
+  justify-self: start;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.chatForm {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}

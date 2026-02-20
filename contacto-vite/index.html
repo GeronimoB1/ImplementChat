@@ -1,36 +1,50 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-  </head>
-  <body>
-    <main class="container">
-      <h1>Formulario de contacto</h1>
 
-      <form id="contactForm" class="card">
-        <label>
-          Nombre
-          <input type="text" name="nombre" required minlength="2" />
-        </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+</head>
 
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
+<body>
+  <main class="container">
+    <h1>Formulario de contacto</h1>
+    <form id="contactForm" class="card">
+      <label>
+        Nombre
+        <input type="text" name="nombre" required minlength="2" />
+      </label>
 
-        <label>
-          Mensaje
-          <textarea name="mensaje" rows="5" required minlength="5"></textarea>
-        </label>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
 
-        <button type="submit" id="submitBtn">Enviar</button>
+      <label>
+        Mensaje
+        <textarea name="mensaje" rows="5" required minlength="5"></textarea>
+      </label>
 
-        <p id="status" class="status" aria-live="polite"></p>
-      </form>
-    </main>
+      <button type="submit" id="submitBtn">Enviar</button>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+      <p id="status" class="status" aria-live="polite"></p>
+    </form>
+    <section class="card" style="margin-top:16px;">
+        <h2>Chat</h2>
+
+        <div id="chatBox" class="chatBox" aria-live="polite"></div>
+
+        <form id="chatForm" class="chatForm">
+          <input id="chatInput" type="text" placeholder="Escribí tu mensaje..." autocomplete="off" required />
+          <button type="submit" id="chatSend">Enviar</button>
+        </form>
+
+        <p id="chatStatus" class="status"></p>
+      </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
