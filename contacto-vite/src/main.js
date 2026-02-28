@@ -2,7 +2,7 @@ import "./style.css";
 import "./chat.js";
 
 // Conecta con el webhook.
-const N8N_WEBHOOK_URL = "http://localhost:5678/webhook-test/f64a5aed-cfb3-459b-8e3b-9b56909d52ef"; 
+const N8N_WEBHOOK_URL = "http://localhost:5678/webhook-test/2883c523-b0e6-454c-a1ad-99b43966ae1b"; 
 
 const form = document.getElementById("contactForm");
 const statusEl = document.getElementById("status");

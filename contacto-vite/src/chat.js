@@ -1,5 +1,5 @@
 
-const N8N_CHAT_WEBHOOK_URL = "http://localhost:5678/webhook-test/330542c7-023f-4b49-bd60-077f3fb7e26c";
+const N8N_CHAT_WEBHOOK_URL = "http://localhost:5678/webhook-test/c89a46cb-8e41-4451-8431-aff427d50c04";
 
 const chatBox = document.getElementById("chatBox");
 const chatForm = document.getElementById("chatForm");
